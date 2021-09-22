@@ -1,0 +1,11 @@
+/*------------------------------------------------------------------
+    LOADER 
+-------------------------------------------------------------------*/
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url('https://weekly.lmpsubscriptions.com/wp-content/uploads/cfdb7_uploads/1589274274-loading.gif')
+  no-repeat center;
+  z-index: 99999;
+}

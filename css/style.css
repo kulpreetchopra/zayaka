@@ -1,0 +1,275 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(superslides.css);
+@import url(baguetteBox.min.css);
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/  
+}
+/*------------------------------------------------------------------
+    LOADER 
+-------------------------------------------------------------------*/
+#loading1{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url('https://weekly.lmpsubscriptions.com/wp-content/uploads/cfdb7_uploads/1589274274-loading.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url('https://weekly.lmpsubscriptions.com/wp-content/uploads/cfdb7_uploads/1589274274-loading.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+.top-navbar{
+	position: relative;
+	z-index: 10;
+}
+
+.top-navbar .navbar{
+	padding: 15px 0px;
+	position: fixed;
+	width: 100%;
+	border-radius: 0px 0px 100px 100px;
+	transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+	z-index: 100;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-link{
+	color: #010101;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+	/*background:green!important;*/
+	color: #ffffff;
+	border-radius: 4px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+	border: none;
+	border-radius: 0px;
+	padding: 10px;
+	box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a{
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+
+.footer{color: white;
+	background-attachment: fixed;
+	background-color: black;
+}
+.signup{
+	background-color: white;
+	border-radius: 10px;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+    border-radius: 4px;
+}
+.centre{
+    text-align: right!important;
+}
+/*------------------------------------------------------------------
+    Back To Top
+-------------------------------------------------------------------*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 52px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+	font-size: 30px;
+}
+#contactme {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 9999;
+    width: 52px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+	font-size: 50px;
+}
+
+/*all banner*/
+.page-breadcrumb {
+    padding: 250px 0 150px;
+    background: url(../images/all-bg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+}
+.all-page-title .container{
+	position: relative;
+	z-index: 2;
+}
+.all-page-title::before{
+	background: #010101!important;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0.8;	
+}
+.all-page-title h1{
+	font-size: 38px;
+	color: #ffffff;
+	padding: 0px;
+	font-weight: 500;
+}
+
+/*our team*/
+.our-team{
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 30px;
+}
+.our-team:hover{
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.our-team .pic{
+    overflow: hidden;
+    position: relative;
+}
+.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 200%;
+    height: 100%;
+    /*background: rgba(38,37,37,0.8);*/
+    position: absolute;
+    /*top: -100%;
+    left: -4%;
+    transform: rotate(45deg);*/
+    transition: all 0.5s ease 0s;
+}
+.our-team .pic:after{
+    top: auto;
+    left: auto;
+    bottom: -100%;
+    right: -4%;
+}
+.our-team:hover .pic:before{ top: 0; }
+.our-team:hover .pic:after{ bottom: 0; }
+.our-team .pic img{
+    width: 100%;
+    height: 275px;
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.5s ease 0.3s;
+}
+.our-team:hover .social{ opacity: 1; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover:after{ transform: rotate(180deg); }
+.our-team .team-content{ padding: 20px; }
+.our-team .title{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+/*@media (max-width: 1000px){
+    .our-team .pic:after{
+    width: 70%!important;
+    
+}*/
+/*------------------------------------------------------------------
+    Gallery
+-------------------------------------------------------------------*/
